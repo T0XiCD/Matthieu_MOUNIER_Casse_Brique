@@ -1,0 +1,14 @@
+C:\Users\mat14\source\repos\projet csharp\projet csharp\bin\Debug\projet csharp.exe.config
+C:\Users\mat14\source\repos\projet csharp\projet csharp\bin\Debug\projet csharp.exe
+C:\Users\mat14\source\repos\projet csharp\projet csharp\bin\Debug\projet csharp.pdb
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet csharp.csproj.AssemblyReference.cache
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet_csharp.Form1.resources
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet_csharp.Properties.Resources.resources
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet csharp.csproj.GenerateResource.cache
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet csharp.csproj.CoreCompileInputs.cache
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet csharp.exe
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet csharp.pdb
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet_csharp.menu.resources
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet_csharp.medium.resources
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet_csharp.regle.resources
+C:\Users\mat14\source\repos\projet csharp\projet csharp\obj\Debug\projet_csharp.hard.resources
