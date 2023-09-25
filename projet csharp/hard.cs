@@ -18,7 +18,7 @@ namespace projet_csharp
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
         }
 
-        //deplacement du paddle
+        
         bool moveLeft, moveRight;
         int speed = 12;
 
@@ -36,6 +36,7 @@ namespace projet_csharp
   
         private void gameOver()
         {
+            //condition de defaite avec le stop su jeux et une fenetre qui souvre pour dire qu'on a perdu + le score qui a ete fais et si on la ferme sa ferme la fenentre du jeux pour revinr au menu 
             timer1.Stop();
             MessageBox.Show("perdu", score_ball.Text = "Score :" + score);
             Close();
@@ -44,7 +45,7 @@ namespace projet_csharp
 
         private void win()
         {
-
+            //condition de win avec le stop su jeux et une fenetre qui souvre pour dire qu'on a gagner + le score qui a ete fais et si on la ferme sa ferme la fenentre du jeux pour revinr au menu 
             timer1.Stop();
             MessageBox.Show("gagner", score_ball.Text = "Score :" + score);
             Close();
@@ -78,7 +79,7 @@ namespace projet_csharp
                 Ball_y = -Ball_y;
             }
 
-            foreach (Control x in this.Controls)// brique grise qui son incasseble et que la ball rebondit dessuS
+            foreach (Control x in this.Controls)// brique grise qui son incasseble et que la ball rebondit dessus
             {
                 if (x is PictureBox && x.Tag == "incassable")
                 {

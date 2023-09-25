@@ -31,6 +31,8 @@ namespace projet_csharp
 
         private void gameOver()
         {
+            //condition de defaite avec le stop su jeux et une fenetre qui souvre pour dire qu'on a perdu + le score qui a ete fais et si on la ferme sa ferme la fenentre du jeux pour revinr au menu 
+
             timer2.Stop();
             MessageBox.Show("perdu",score_ball.Text = "Score :" + score);
             Close();
@@ -39,7 +41,7 @@ namespace projet_csharp
 
         private void win()
         {
-           
+            //condition de win avec le stop su jeux et une fenetre qui souvre pour dire qu'on a gagner + le score qui a ete fais et si on la ferme sa ferme la fenentre du jeux pour revinr au menu 
             timer2.Stop();
             MessageBox.Show("gagner",score_ball.Text = "Score :" + score);
             Close();

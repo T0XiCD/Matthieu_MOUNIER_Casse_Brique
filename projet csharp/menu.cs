@@ -23,13 +23,14 @@ namespace projet_csharp
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
+            // deplace le paddle tout seul
             pictureBox1.Left -= horizontalspeed;
             if (pictureBox1.Left < 12 || pictureBox1.Right > 590)
             {
                 horizontalspeed = -horizontalspeed;
             }
 
-
+            // deplace et fais rebondire la ball dans la fenetre 
             ball.Left += Ball_x;
             ball.Top += Ball_y;
             if (ball.Left + ball.Width > ClientSize.Width || ball.Left < 0)
