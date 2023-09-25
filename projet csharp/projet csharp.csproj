@@ -134,5 +134,8 @@
   <ItemGroup>
     <None Include="Resources\arrow-png-left.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lines-png-16268.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
