@@ -27,6 +27,7 @@ namespace projet_csharp
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void gameOver()

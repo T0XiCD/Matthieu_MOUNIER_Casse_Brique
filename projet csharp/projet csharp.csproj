@@ -98,6 +98,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="regle.resx">
       <DependentUpon>regle.cs</DependentUpon>
@@ -114,6 +115,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8-ball-pool-png-23051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint-png-22879.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paint-png-22878.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-png-5543.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-png-left.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

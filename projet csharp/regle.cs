@@ -16,6 +16,7 @@ namespace projet_csharp
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = FormBorderStyle.None;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -28,6 +29,19 @@ namespace projet_csharp
         private void button1_Click(object sender, EventArgs e)
         {
             Close(); 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+           
+                
+                
+            
+        }
+
+        private void regle_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

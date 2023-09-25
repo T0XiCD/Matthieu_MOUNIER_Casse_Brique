@@ -20,6 +20,7 @@ namespace projet_csharp
         {
             InitializeComponent();
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = FormBorderStyle.None;
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -66,13 +67,15 @@ namespace projet_csharp
             hard gameWindow =  new hard();
             gameWindow.Show();
         }
-
+        private void button5_Click(object sender, EventArgs e)// sert a quitter le jeux car plus de croix
+        {
+            Close();
+        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
 
-     
-
+       
     }
 }
