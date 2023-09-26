@@ -118,22 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>le jeux se joue avec les fleche gauche et droite.
-la condition de win est d'avoir le score exacte et de retoucher son paddle.
-la condition de loose et le fait que la ball touche le bas de l'ecrant.
-le score pour gagner a chaque niveaux coresspond a casser toute les brique.
+    <value>Bienvenue sur les régles du casse brique.
 
-level easy : le level de base sans difficulter apparente,
-                   le score pour gagner est de 18.
+Pour gagner il faut casser toute les briques et retoucher son paddle.
+La defaite intervient si la ball touche le bas de l'écran.
+Le jeux se divise en 3 levels avec des difficultées en plus a chaque level.
+La fenêtre est bloquer en taille et pour quitter le jeux il y a le bouton Quit.
 
-level medium : la le level augment en difficulter car la ball va 2x plus vite que le easy.
-                          il y a des brique incassable.
-                          le score pour gagner est de 16.
+Voici les 3 levels avec les explication de chaque levels :
 
-level hard : la ball va a la meme vitesse que le medium 
-                   les brique incasable bouge de gauche a droite.
-                   le score pour gagner est de 36.
+Level easy : le level de base sans difficulter apparente.
+                  
+Level medium : Sur ce level la ball va 2 fois plus vite que le level easy 
+                          et il y a des briques incassable.
 
+Level hard :  Sur ce level la ball va a la meme vitesse que le level medium 
+                     et les brique incassable bouge.
+
+Le jeux se joue avec les fléche gauche et droite.
 
 
 </value>

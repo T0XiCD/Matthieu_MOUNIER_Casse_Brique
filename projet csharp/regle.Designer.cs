@@ -41,9 +41,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 28);
+            this.label1.Location = new System.Drawing.Point(22, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(736, 450);
+            this.label1.Size = new System.Drawing.Size(650, 500);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -51,7 +51,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(594, 430);
+            this.button1.Location = new System.Drawing.Point(731, 454);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(182, 71);
             this.button1.TabIndex = 1;
@@ -62,9 +62,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::projet_csharp.Properties.Resources.arrow_png_5543;
-            this.pictureBox1.Location = new System.Drawing.Point(769, 299);
+            this.pictureBox1.Location = new System.Drawing.Point(528, 469);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(117, 96);
+            this.pictureBox1.Size = new System.Drawing.Size(64, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -73,9 +73,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::projet_csharp.Properties.Resources.arrow_png_left;
-            this.pictureBox2.Location = new System.Drawing.Point(626, 299);
+            this.pictureBox2.Location = new System.Drawing.Point(439, 469);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(117, 96);
+            this.pictureBox2.Size = new System.Drawing.Size(64, 56);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
