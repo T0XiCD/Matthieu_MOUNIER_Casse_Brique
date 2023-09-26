@@ -1,11 +1,11 @@
 ﻿# Matthieu_MOUNIER_Casse_Brique
 # Projet c# casse brique
 
-Le but du projet est de faire un mini jeux en windows form c#.
-Pour le projet j'ai choisi de faire un casse brique.
-Dans mon projet il y a un menu, des niveaux de difficultés, les règle du jeux, une condition de win et loose.
-J'ai rajouter des sprites pour la et quelque brique et un fond au jeux.
-j'ai enlever le bord de la fenêtre et empêcher de la redimensionner, pour quitter le mini jeux il y a le bouton **"quit"** .
+Le but du projet est de faire un mini jeux en windows form c#.  
+Pour le projet j'ai choisi de faire un casse brique.  
+Dans mon projet il y a un menu, des niveaux de difficultés, les règle du jeux, une condition de win et loose.  
+J'ai rajouter des sprites pour la et quelque brique et un fond au jeux.  
+j'ai enlever le bord de la fenêtre et empêcher de la redimensionner, pour quitter le mini jeux il y a le bouton **"quit"** .  
 
 # Comment sa marche ?
 
