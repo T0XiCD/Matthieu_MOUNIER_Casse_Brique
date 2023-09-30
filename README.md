@@ -6,6 +6,7 @@ Pour le projet j'ai choisi de faire un casse brique.
 Dans mon projet il y a un menu, des niveaux de difficultés, les règle du jeux, une condition de win et loose.  
 J'ai rajouter des sprites pour la et quelque brique et un fond au jeux.  
 j'ai enlever le bord de la fenêtre et empêcher de la redimensionner, pour quitter le mini jeux il y a le bouton **"quit"** .  
+Pour les bonus/malus je l'ai applique quand la ball touche une brique (example de bonus/malus : vitesse de la ball augmenter, toucher 2 fois la meme brique avant de la casser)
 
 # Comment sa marche ?
 
@@ -21,3 +22,6 @@ Une fois la partie fini que se soit gagner ou perdue, une petite fenêtre s'ouvr
 22/09 : Mise en place du menu et des autre niveaux de difficultés.  
 25/09 : Début de la rédaction du **readme**, correction de bug et ajustement du jeux, ajout de **sprite** dans le jeux.  
 26/09 : continuité du **readme** et écrire les règle au propre.  
+27/09 : recherche des bonus/malus.  
+28/09 : oral  
+30/09 : incorporation des bonus/malus plus correction du code.  
