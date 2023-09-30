@@ -55,11 +55,31 @@ namespace projet_csharp
         {
             foreach (Control x in this.Controls)
             {
-                if (x is PictureBox && x.Tag == "brique")
+                if (x.BackColor == Color.Green)// fonction pour enlever les case verte
                 {
                     if (ball.Bounds.IntersectsWith(x.Bounds))
                     {
                         Controls.Remove(x);
+                    }
+                }
+
+
+                if (x.BackColor == Color.Red)// fonction pour enlever les case qui son rouge
+                {
+                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        Controls.Remove(x);
+                    }
+
+                }
+
+                if (x is PictureBox && x.Tag == "brique")
+                {
+                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    {
+
+                        // pour touche deux fois la meme case 
+                        x.BackColor = Color.Red;
                         Ball_y = -Ball_y;
                         score++;
                         score_ball.Text = "Score :" + score;
@@ -104,7 +124,7 @@ namespace projet_csharp
                 if ((string)x.Tag == "player")
                 {
 
-                    if (ball.Bounds.IntersectsWith(x.Bounds) && score == 36)
+                    if (ball.Bounds.IntersectsWith(x.Bounds) && score == 44)
                     {
                         win();
                     }

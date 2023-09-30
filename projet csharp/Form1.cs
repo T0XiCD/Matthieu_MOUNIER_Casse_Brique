@@ -20,9 +20,12 @@ namespace projet_csharp
         int Ball_x = 4;
         int Ball_y = 4;
 
-       
-
         int score = 0;
+        
+        Random rand = new Random();
+        List<PictureBox> item = new List<PictureBox>();
+
+
         public Form1()
         {
             InitializeComponent();
@@ -30,9 +33,37 @@ namespace projet_csharp
             this.FormBorderStyle = FormBorderStyle.None;
         }
 
+
+       /* private void malus()
+        {
+            PictureBox newpic = new PictureBox();
+            newpic.Height = 20;
+            newpic.Width = 20;
+            newpic.BackColor = Color.Red;
+
+           int x = rand.Next(10, this.ClientSize.Width - newpic.Width);
+           int y = rand.Next(10, this.ClientSize.Height - newpic.Height);
+
+            
+
+            foreach (Control j in this.Controls)
+            {
+                if (j is PictureBox && j.Tag == "brique")
+                {
+                    if (ball.Bounds.IntersectsWith(j.Bounds))
+                    {
+
+                        newpic.Location = new Point(x, y);
+                        item.Add(newpic);
+                        this.Controls.Add(newpic);
+                    }
+                }
+            }
+
+        }*/
         private void gameOver()
         {
-            //condition de defaite avec le stop su jeux et une fenetre qui souvre pour dire qu'on a perdu + le score qui a ete fais et si on la ferme sa ferme la fenentre du jeux pour revinr au menu 
+            //condition de defaite avec le stop du jeux et une fenetre qui souvre pour dire qu'on a perdu + le score qui a ete fais et si on la ferme sa ferme la fenentre du jeux pour revinr au menu 
 
             timer2.Stop();
             MessageBox.Show("perdu",score_ball.Text = "Score :" + score);
@@ -42,7 +73,7 @@ namespace projet_csharp
 
         private void win()
         {
-            //condition de win avec le stop su jeux et une fenetre qui souvre pour dire qu'on a gagner + le score qui a ete fais et si on la ferme sa ferme la fenentre du jeux pour revinr au menu 
+            //condition de win avec le stop du jeux et une fenetre qui souvre pour dire qu'on a gagner + le score qui a ete fais et si on la ferme sa ferme la fenentre du jeux pour revinr au menu 
             timer2.Stop();
             MessageBox.Show("gagner",score_ball.Text = "Score :" + score);
             Close();
@@ -50,12 +81,31 @@ namespace projet_csharp
         private void get_score() // a chaque fois que la balle touche une brique le score augmente 
         {
             foreach(Control x in this.Controls)
-            {
+             {
+                if(x.BackColor == Color.Green)// fonction pour enlever les case verte
+                {
+                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        Controls.Remove(x);
+                    }
+                }
+                
+                
+                if (x.BackColor == Color.Red)// fonction pour enlever les case qui son rouge
+                {
+                    if (ball.Bounds.IntersectsWith(x.Bounds)){
+                        Controls.Remove(x);
+                    }
+                    
+                }
+                
                 if(x is PictureBox && x.Tag=="brique")
                 {
                     if(ball.Bounds.IntersectsWith(x.Bounds))
                     {
-                        Controls.Remove(x);
+                        
+                        // pour touche deux fois la meme case 
+                        x.BackColor = Color.Red;
                         Ball_y = -Ball_y;
                         score++;
                         score_ball.Text = "Score :" + score;
@@ -73,6 +123,7 @@ namespace projet_csharp
             }
             if (ball.Top < 0 || ball.Bounds.IntersectsWith(player.Bounds))
             {
+                
                 Ball_y = -Ball_y;
             }
             if (ball.Top + ball.Height > ClientRectangle.Height)// condition de defaite, si la ball sort de l'ecran part en bas 
@@ -85,12 +136,16 @@ namespace projet_csharp
                 if ((string)x.Tag == "player") 
                 {
 
-                    if (ball.Bounds.IntersectsWith(x.Bounds) && score == 18)
+                    if (ball.Bounds.IntersectsWith(x.Bounds) && score == 27)
                     {
                         win();
                     }
                 }
             }
+
+            
+
+
         }
         private void player_movement() //deplacement du paddle
         {
@@ -108,7 +163,7 @@ namespace projet_csharp
             ball_movement();
             get_score();
             player_movement();
-
+           // malus();
            
         }
 
