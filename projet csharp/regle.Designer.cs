@@ -41,9 +41,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(37, -2);
+            this.label1.Location = new System.Drawing.Point(29, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(600, 572);
+            this.label1.Size = new System.Drawing.Size(606, 572);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -51,7 +51,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(731, 454);
+            this.button1.Location = new System.Drawing.Point(750, 504);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(182, 71);
             this.button1.TabIndex = 1;
@@ -62,18 +62,19 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::projet_csharp.Properties.Resources.arrow_png_5543;
-            this.pictureBox1.Location = new System.Drawing.Point(528, 469);
+            this.pictureBox1.Location = new System.Drawing.Point(547, 519);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 56);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::projet_csharp.Properties.Resources.arrow_png_left;
-            this.pictureBox2.Location = new System.Drawing.Point(439, 469);
+            this.pictureBox2.Location = new System.Drawing.Point(458, 519);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 56);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -86,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(925, 537);
+            this.ClientSize = new System.Drawing.Size(971, 588);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);

@@ -43,5 +43,10 @@ namespace projet_csharp
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

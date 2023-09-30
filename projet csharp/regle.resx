@@ -126,10 +126,10 @@ Le jeux se divise en 3 levels avec des difficultées en plus a chaque level.
 La fenêtre est bloquer en taille et pour quitter le jeux il y a le bouton Quit.
 
 Les differentes couleur de brique et leurs pouvoir : 
-Verte : normal donne 1 de score. 
-Bleu : doit etre toucher 2 fois pour se casser, donne 2 de score.
-Jaune : comme la verte mais modifie la vitesse de la ball jusqu'a la fin.
-Métal : elles ont incassbale, donne 0 de score.
+        Verte : normal donne 1 de score. 
+        Bleu : doit etre toucher 2 fois pour se casser, donne 2 de score.
+        Jaune : comme la verte mais modifie la vitesse de la ball jusqu'a la fin.
+        Métal : elles ont incassbale, donne 0 de score.
 
 Voici les 3 levels avec les explication de chaque levels :
 
