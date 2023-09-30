@@ -34,33 +34,7 @@ namespace projet_csharp
         }
 
 
-       /* private void malus()
-        {
-            PictureBox newpic = new PictureBox();
-            newpic.Height = 20;
-            newpic.Width = 20;
-            newpic.BackColor = Color.Red;
-
-           int x = rand.Next(10, this.ClientSize.Width - newpic.Width);
-           int y = rand.Next(10, this.ClientSize.Height - newpic.Height);
-
-            
-
-            foreach (Control j in this.Controls)
-            {
-                if (j is PictureBox && j.Tag == "brique")
-                {
-                    if (ball.Bounds.IntersectsWith(j.Bounds))
-                    {
-
-                        newpic.Location = new Point(x, y);
-                        item.Add(newpic);
-                        this.Controls.Add(newpic);
-                    }
-                }
-            }
-
-        }*/
+     
         private void gameOver()
         {
             //condition de defaite avec le stop du jeux et une fenetre qui souvre pour dire qu'on a perdu + le score qui a ete fais et si on la ferme sa ferme la fenentre du jeux pour revinr au menu 
@@ -93,7 +67,9 @@ namespace projet_csharp
                 
                 if (x.BackColor == Color.Red)// fonction pour enlever les case qui son rouge
                 {
-                    if (ball.Bounds.IntersectsWith(x.Bounds)){
+
+                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    {
                         Controls.Remove(x);
                     }
                     
@@ -103,9 +79,9 @@ namespace projet_csharp
                 {
                     if(ball.Bounds.IntersectsWith(x.Bounds))
                     {
+
                         
-                        // pour touche deux fois la meme case 
-                        x.BackColor = Color.Red;
+                        x.BackColor = Color.Red;//pour changer la couleur des case qui sont pas verte
                         Ball_y = -Ball_y;
                         score++;
                         score_ball.Text = "Score :" + score;

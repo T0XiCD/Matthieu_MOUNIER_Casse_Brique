@@ -63,6 +63,16 @@ namespace projet_csharp
                     }
                 }
 
+                if (x.BackColor == Color.Yellow) // pour accelerer la ball
+                {
+                    if (ball.Bounds.IntersectsWith(x.Bounds))
+                    {
+                        Controls.Remove(x);
+                        Ball_x = 12;
+                        Ball_y = 12;
+
+                    }
+                }
 
                 if (x.BackColor == Color.Red)// fonction pour enlever les case qui son rouge
                 {

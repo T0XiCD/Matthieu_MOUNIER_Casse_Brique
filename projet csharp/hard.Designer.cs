@@ -361,7 +361,7 @@
             // 
             // pictureBox12
             // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Green;
+            this.pictureBox12.BackColor = System.Drawing.Color.Yellow;
             this.pictureBox12.Location = new System.Drawing.Point(447, 166);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(54, 23);
@@ -371,7 +371,7 @@
             // 
             // pictureBox15
             // 
-            this.pictureBox15.BackColor = System.Drawing.Color.Green;
+            this.pictureBox15.BackColor = System.Drawing.Color.Yellow;
             this.pictureBox15.Location = new System.Drawing.Point(447, 205);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(54, 23);
